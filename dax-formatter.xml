@@ -1,4 +1,28 @@
-        <Macro name="DAX Format" Ctrl="no" Alt="no" Shift="no" Key="0">
+A Macro code in Notepad++ that formats the DAX Measures defined in DAX Studio for the easy-to-see format (in Power BI)
+
+1) Follow below link to locat the shortcuts.xml file under your Notepad ++ installation folder
+https://community.notepad-plus-plus.org/topic/17349/macro-save-reload-where-files
+
+2) Open shortcuts.xml
+
+3) Copy the code, and paste it as the last (or between) node of the <Macro></Macro>
+
+4) Re-open Notepad++, you will find it under 'Macro' menu
+
+===============================
+Normally I would use DAX Studio - link to Power BI Model and ''Define All Measures (All Tables)"
+Copy the DAX code from DAX Studio
+Paste to Notepad ++
+Use the Macro to format (there is also another file in this git that will "Define Your Language" for DAX code, and highlights the DAX keywords )
+===============================
+This is not a perfect Macro, but a simply one that suit daily usage, its also easy to Record your own Macro in Notepad++
+===============================
+
+Thanks
+K
+===================================================
+
+<Macro name="DAX Format" Ctrl="no" Alt="no" Shift="no" Key="0">
             <Action type="0" message="2316" wParam="0" lParam="0" sParam="" />
             <Action type="3" message="1700" wParam="0" lParam="0" sParam="" />
             <Action type="3" message="1601" wParam="0" lParam="0" sParam="DEFINE.*?^MEASURE" />
